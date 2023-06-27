@@ -1,0 +1,44 @@
+https://medium.com/codex/introduction-to-assembly-programming-in-arm-addressing-modes-fb1b0e8426e6
+Introduction to Assembly Programming in ARM — Addressing Modes
+
+disass: radare2
+opcode: 
+nemo: 
+name: 
+dest: 
+
+disass: radare2
+opcode: 
+nemo: 
+name: Immediate Addressing
+dest: Used in cases where you want to load a constant value into an address.
+
+disass: radare2
+opcode: 
+nemo: 
+name: Register Direct Addressing
+dest: Used in cases where you want to move data between two registers.
+
+disass: radare2
+opcode: 
+nemo: 
+name: Register Indirect Addressing
+dest: Used in cases where you want to load data from an address stored in a register.
+
+disass: radare2
+opcode: 041090e5
+nemo: ldr r1, [r0, 4]
+name: Register Indirect with Offset
+dest: Used in cases where you want to load data from an address stored in a register plus some offset.
+
+disass: radare2
+opcode: 0410b0e5
+nemo: ldr r1, [r0, 4]!
+name: Register Indirect Preincrement
+dest: Used in cases where you want to increment a register, then access the address stored in it.
+
+disass: radare2
+opcode: 041090e4
+nemo: ldr r1, [r0], 4
+name: Register Indirect Postincrement
+dest: Used in cases where you want to increment a register after it is accessed.
