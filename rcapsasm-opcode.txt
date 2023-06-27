@@ -1,0 +1,3 @@
+armhf e4901004 ldr r1, [r0], #4
+armhf e5901004 ldr r1, [r0, #4]
+armhf e5b01004 ldr r1, [r0, #4]!
